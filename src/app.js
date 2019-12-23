@@ -2,7 +2,7 @@ const config = require("./config");
 
 const express = require("express");
 
-const Logger = require("./loaders/logger");
+const Logger = require("./loaders/logger.loader");
 
 async function startServer() {
   const app = express();

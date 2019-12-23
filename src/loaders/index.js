@@ -1,5 +1,5 @@
-const expressLoader = require("./express");
-const Logger = require("./logger");
+const expressLoader = require("./express.loader");
+const Logger = require("./logger.loader");
 
 module.exports = async ({ expressApp }) => {
   await expressLoader({ app: expressApp });
