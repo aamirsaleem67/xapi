@@ -1,6 +1,6 @@
 const Router = require("express");
 const route = Router();
-const UserService = require("../../services/user.service");
+const UserService = require("./user.service");
 const container = require("typedi").Container;
 
 module.exports = app => {

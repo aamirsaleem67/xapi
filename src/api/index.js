@@ -1,5 +1,5 @@
 const Router = require("express");
-const user = require("./routes/user");
+const user = require("../modules/user/user.controller");
 
 // guaranteed to get dependencies
 module.exports = () => {
