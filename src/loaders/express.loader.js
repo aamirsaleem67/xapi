@@ -1,7 +1,7 @@
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const config = require("../config");
-const routes = require("./controllers.loader");
+const routes = require("./routes.loader");
 
 module.exports = ({ app }) => {
   /**

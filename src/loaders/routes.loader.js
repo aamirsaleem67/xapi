@@ -1,11 +1,11 @@
 const Router = require("express");
 const CONTROLLERS = [
-  require("../modules/user/user.controller") //
+  require("../routes/post.route") //
 ];
 
 // the purpose of this file is to register all the controllers and provide each controller dependency
 
-function injectDependenciesToControllers(app) {
+function injectDependenciesToRoutes(app) {
   CONTROLLERS.forEach(controller => {
     controller(app);
   });
@@ -13,6 +13,6 @@ function injectDependenciesToControllers(app) {
 
 module.exports = () => {
   const app = Router();
-  injectDependenciesToControllers(app);
+  injectDependenciesToRoutes(app);
   return app;
 };
