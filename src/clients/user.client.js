@@ -1,4 +1,4 @@
-const axios = require("axios");
+const axios = require("../connectors/user.connector");
 
 class UserClient {
   constructor() {}
@@ -6,7 +6,7 @@ class UserClient {
   async create(body) {
     return await axios({
       method: "post",
-      url: "https://jsonplaceholder.typicode.com/users",
+      url: "/",
       data: body
     });
   }
@@ -14,21 +14,21 @@ class UserClient {
   async get(postId) {
     return await axios({
       method: "get",
-      url: `https://jsonplaceholder.typicode.com/users/?postId=${postId}`
+      url: `/?postId=${postId}`
     });
   }
 
   async update(id = 1) {
     return await axios({
       method: "get",
-      url: `https://jsonplaceholder.typicode.com/users/${id}`
+      url: `/${id}`
     });
   }
 
   async delete(id = 1) {
     return await axios({
       method: "get",
-      url: `https://jsonplaceholder.typicode.com/users/${id}`
+      url: `/${id}`
     });
   }
 }
