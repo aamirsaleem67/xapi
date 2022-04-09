@@ -28,7 +28,7 @@
     "express": "4.17.1",
     "lodash": "4.17.15",
     "method-override": "3.0.0",
-    "moment": "2.24.0",
+    "moment": "2.29.2",
     "typedi": "0.8.0",
     "winston": "3.2.1"
   },
